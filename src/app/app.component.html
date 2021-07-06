@@ -10,6 +10,6 @@
     <img  *ngFor="let item of imgArray" [src]="item" alt="">
   </div>
   <div class="button-container">
-    <i  *ngFor="let item of Counter; index as i" (click)="changeImg(3*i)" class='far fa-star'></i>
+    <button  *ngFor="let item of Counter; index as i" (click)="changeImg(3*i)"><i  class='far fa-star'></i></button>
   </div>
 </div>
